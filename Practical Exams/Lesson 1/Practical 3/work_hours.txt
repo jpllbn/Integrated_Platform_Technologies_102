@@ -1,0 +1,11 @@
+Alice,5
+Bob,8
+Charlie,4
+Alice,3
+Bob,7
+Charlie,6
+Dañia,8
+Alice,4
+Bob,8
+Charlie,5
+Dañia,8

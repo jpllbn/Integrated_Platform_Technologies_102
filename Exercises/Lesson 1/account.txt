@@ -1,0 +1,4 @@
+001*John Doe*54-79-000*Alpha
+002*Ana Cruz*38-41-111*Beta
+003*May Lee*31-67-342*Alpha
+004*Cali Joe*11-38-123*Beta
