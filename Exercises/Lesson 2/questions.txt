@@ -1,0 +1,5 @@
+('Who developed Python?', 'Guido  van Rossum')
+('What year was the first released of Python?', '1991')
+("Where do Python's name derived from?", "Monty Python's Flying Circus")
+('Serve as the container that holds temporary value?', 'Variable')
+('Which animal represents the Python logo?', 'Snake')
