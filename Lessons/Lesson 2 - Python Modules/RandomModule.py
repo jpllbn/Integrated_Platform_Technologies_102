@@ -31,13 +31,13 @@
 
 # random.shuffle
 
-# import random
-#
-# deck = [1,2,3,4,5]
-#
-# random.shuffle(deck)
-#
-# print(deck)
+import random
+
+deck = [1,2,3,4,5]
+
+random.shuffle(deck)
+
+print(deck)
 
 # random.sample
 
@@ -64,10 +64,10 @@
 import random
 import string
 
-characters = string.ascii_letters + string.ascii_uppercase + string.ascii_lowercase + string.digits
-
-secure_random = random.SystemRandom(characters)
-
-generateKey = ''.join(random.choice(characters) for i in characters)
-
-print(f"Key Generated: {generateKey}")
+# characters = string.ascii_letters + string.ascii_uppercase + string.ascii_lowercase + string.digits
+#
+# secure_random = random.SystemRandom(characters)
+#
+# generateKey = ''.join(random.choice(characters) for i in characters)
+#
+# print(f"Key Generated: {generateKey}")

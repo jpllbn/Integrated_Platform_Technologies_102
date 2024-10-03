@@ -16,7 +16,10 @@ def CreateOperation():
 
     #Sample SQL
 
-    insert_query = "INSERT INTO student_grade(student_name,student_id,grade) VALUES (%s,%s,%s)"
+    insert_query = """INSERT INTO 
+    student_grade(student_name,student_id,grade)
+    VALUES (%s,%s,%s)"""
+
     # data = ("John Doe", 1100, "A")
     data = [
         ("John Doe", 20, "A"),
@@ -49,7 +52,30 @@ def SelectOperation():
         print(row)
         # print(f"ID: {row[0]} Name: {row[1]} Age: {row[2]} Grade: {row[3]}")
 
+def DeleteOperation():
+    cursor = connection.cursor()
 
-SelectOperation()
+    delete_query = "DELETE FROM student_grade WHERE student_id = %s OR grade = %s"
+
+    data = ("1100","A",)
+
+    cursor.execute(delete_query, data)
+
+    connection.commit()
+
+    print(f"{cursor.rowcount} record(s) deleted.")
+
+def UpdateOperation():
+    cursor = connection.cursor()
+
+    update_query = "UPDATE student_grade SET student_name = %s WHERE grade = %s"
+
+    data = ("John Gabriel","B",)
+
+    cursor.execute(update_query, data)
+
+    connection.commit()
+
+    print(f"{cursor.rowcount} record(s) updated.")
 
 
