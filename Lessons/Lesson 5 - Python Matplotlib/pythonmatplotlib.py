@@ -167,17 +167,17 @@ import numpy as np
 
 # Pie Chart - Data Comparison
 
-import matplotlib.pyplot as plt
-import numpy as np
-label = ['A', 'B', 'C', 'D']
-sizes = np.array([35, 25, 25, 15])
-colors = ['yellow', 'blue', 'red', 'green']
-plt.title("Pie Chart")
-
-# autopct = '%1.1t%%' - Decimal Number
-# autopct = '%1.1d%%' - Whole Number
-plt.pie(sizes, labels= label, colors = colors, autopct = '%1.1d%%', shadow=True, explode = (0.1, 0,0,0))
-plt.show()
+# import matplotlib.pyplot as plt
+# import numpy as np
+# label = ['A', 'B', 'C', 'D']
+# sizes = np.array([35, 25, 25, 15])
+# colors = ['yellow', 'blue', 'red', 'green']
+# plt.title("Pie Chart")
+#
+# # autopct = '%1.1t%%' - Decimal Number
+# # autopct = '%1.1d%%' - Whole Number
+# plt.pie(sizes, labels= label, colors = colors, autopct = '%1.1d%%', shadow=True, explode = (0.1, 0,0,0))
+# plt.show()
 
 
 

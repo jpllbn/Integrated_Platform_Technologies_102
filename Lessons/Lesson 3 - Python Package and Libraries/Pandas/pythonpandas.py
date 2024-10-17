@@ -69,7 +69,7 @@ import pandas as pd
 # print(df['Name'])
 #
 # print('+*' * 5, "Multiple Columns", '+*' * 5)
-# print(df[['Name', 'Age']])
+# print(df[['Name', 'Age', 'Salary']])
 #
 # print('+*' * 5, "Select Rows based", '+*' * 5)
 # filter = df[df['Age']>30]
@@ -144,9 +144,9 @@ import pandas as pd
 # print("New data has been appended to 'newdata.csv'")
 
 
-data = {}
-
-
+# data = {}
+#
+#
 # df = pd.read_csv('data.csv')
 # print(df)
 #
@@ -162,7 +162,7 @@ data = {}
 # print(f"Median: {median}")
 # print(f"Standard Deviation: {std}")
 # print(f"Variance: {var:2F}")
-#
+
 #
 # # Sorting Data
 # print(df.sort_values(by='Salary'))
@@ -171,17 +171,17 @@ data = {}
 
 # Merge and Join
 
-df1 = pd.DataFrame({'Key': ['A', 'B', 'C'], 'Value1':[1,2,3]})
-df2 = pd.DataFrame({'Key': ['A', 'B', 'D'], 'Value1':[4,5,6]})
-
-# dfMerged = pd.merge(df1, df2, on='Key')
-
-# usage of how='outer' parameter
-dfMerged = pd.merge(df1, df2, on='Key', how = 'outer')
-
-print(df1)
-print(df2)
-print(dfMerged)
+# df1 = pd.DataFrame({'Key': ['A', 'B', 'C'], 'Value1':[1,2,3]})
+# df2 = pd.DataFrame({'Key': ['A', 'B', 'D'], 'Value1':[4,5,6]})
+#
+# # dfMerged = pd.merge(df1, df2, on='Key')
+#
+# # usage of how='outer' parameter
+# dfMerged = pd.merge(df1, df2, on='Key', how = 'outer')
+#
+# print(df1)
+# print(df2)
+# print(dfMerged)
 
 
 
